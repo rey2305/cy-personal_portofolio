@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #2B211C;
+  --color-brand-cream: #EFE7DC;
+  --color-brand-accent: #B33A3A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar Vintage */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EFE7DC;
+}
+::-webkit-scrollbar-thumb {
+  background: #2B211C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B33A3A;
+}
