@@ -24,3 +24,58 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #B33A3A;
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes floatDelayed {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(-2deg); }
+}
+
+@keyframes petalFall {
+  0% { transform: translateY(-10px) translateX(0) rotate(0deg); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(60px) translateX(20px) rotate(180deg); opacity: 0; }
+}
+
+@keyframes tailWag {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(12deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { transform: scale(0.6); opacity: 0.3; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+/* Class Utility Tailwind Custom */
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatDelayed 7s ease-in-out infinite 1s;
+}
+
+.animate-petal-fall-1 {
+  animation: petalFall 4s ease-in-out infinite;
+}
+
+.animate-petal-fall-2 {
+  animation: petalFall 5s ease-in-out infinite 2s;
+}
+
+.animate-tail-wag {
+  animation: tailWag 3s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 2.5s ease-in-out infinite;
+}
+
+.animate-twinkle-delayed {
+  animation: twinkle 2.5s ease-in-out infinite 1.2s;
+}
